@@ -6,7 +6,6 @@ public class JogoDaVelha {
 
     private String jogo[][] = new String[3][3];
 
-
     public JogoDaVelha() {
 
         for (int i = 0; i < jogo.length; i++) {
@@ -87,7 +86,6 @@ public class JogoDaVelha {
 
     }
 
-
     public int verificadorDeLinha(int linha) {
 
         while (linha > 2 | linha < 0) {
@@ -96,7 +94,6 @@ public class JogoDaVelha {
         }
         return linha;
     }
-
 
     public boolean verificarJogada(int linha, int coluna) {
 
@@ -114,16 +111,12 @@ public class JogoDaVelha {
                 }
             }
         }
-
         return resposta;
-
     }
-
 
     public void realizarJogada(String player, int linha, int coluna) {
         jogo[linha][coluna] = player;
     }
-
 
     public boolean verificarGanhador() {
 
@@ -218,7 +211,6 @@ public class JogoDaVelha {
         return resultado;
     }
 
-
     public void gameOn() {
 
         int i = 1;
@@ -258,8 +250,5 @@ public class JogoDaVelha {
             System.out.println("Ninguem ganhou, deu velha");
 
         }
-
-
-
     }
 }
